@@ -1,58 +1,39 @@
-# Api-PHP-Xtream-Codes
-UTILIZANDO A API XTREAM DE FORMA SIMPLES
-  
-Os metodos são acessados via GET ou POST apartir do envio de alguns paramêtros
- 
-  Login e Senha = Obrigatorio em todas as requisições
- 
-  Chamada Login: 
-  api.php?op=login&usuario=USUARIO&senha=SENHA
- 
-  Chamada Categorias de Canais:
-  api.php?op=categoria_canais&usuario=USUARIO&senha=SENHA
- 
-  Chamada Todos os Canais:
-  api.php?op=canais&usuario=USUARIO&senha=SENHA
- 
-  Chamada Canais por Categoria:
-  api.php?op=canais&categoria=ID&usuario=USUARIO&senha=SENHA
- 
-  Chamada Categorias de Vods (Filmes):
-  api.php?op=categoria_vods&usuario=USUARIO&senha=SENHA
- 
-  Camada Todos os Vods (Filmes):
-  api.php?op=vods&categoria=ID&usuario=USUARIO&senha=SENHA
- 
-  Chamada Vods por Categoria:
-  api.php?op=vods&categoria=ID&usuario=USUARIO&senha=SENHA
- 
-  Chamada Categorias Séries:
-  api.php?op=categoria_series&usuario=USUARIO&senha=SENHA
- 
-  Chamada Todas as Séries:
-  api.php?op=series&usuario=USUARIO&senha=SENHA
- 
-  Chamada Séries por Categoria:
-  api.php?op=series&categoria=ID&usuario=USUARIO&senha=SENHA
- 
-  Chamada Informações do Vod (Filme):
-  api.php?op=vod&id=ID&usuario=USUARIO&senha=SENHA
- 
-  Chamada Informações da Série
-  api.php?op=serie&id=ID&usuario=USUARIO&senha=SENHA
- 
-  Camada EPG Resumido Por Canal
-  api.php?op=epg_simples&id=ID&usuario=USUARIO&senha=SENHA
- 
-  Camada EPG Completo Por Canal
-  api.php?op=epg&id=ID&usuario=USUARIO&senha=SENHA
- 
-  Camada Todo EPG Full
-  api.php?op=epgfull&usuario=USUARIO&senha=SENHA
- 
- 
-  Faça as chamads através do seu navegador pela URL que você ai utilizar 
-  Exemplo: www.meudominio.com/api.php?op=epgfull&usuario=USUARIO&senha=SENHA
- 
-  Verão 1.0 
-  Necessário Tratar e Adaptar Arrys e Valores
+USING THE XTREAM API SIMPLY
+
+The methods are accessed via GET or POST by sending some parameters.
+
+Login and Password = Required on all requests
+
+Call Login: api.php? Op = login & username = USER & password = PASSWORD
+
+Call Channel Categories: api.php? Op = channel_category & username = USER & password = PASSWORD
+
+Call All Channels: api.php? Op = channels & username = USER & password = PASSWORD
+
+Call Channels by Category: api.php? Op = channels & category = User ID = USER & password = PASSWORD
+
+Call Vods Categories (Movies): api.php? Op = category_vods & username = USER & password = PASSWORD
+
+All Vods (Movies) Layer: api.php? Op = vods & category = User ID = USER & password = PASSWORD
+
+Call Vods by Category: api.php? Op = vods & category = User ID = USER & Password = PASSWORD
+
+Call Categories Series: api.php? Op = category_series & username = USER & password = PASSWORD
+
+Call All Series: api.php? Op = series & username = USER & password = PASSWORD
+
+Call Series by Category: api.php? Op = series & category = User ID = USER & Password = PASSWORD
+
+Calling Vod (Movie) Info: api.php? Op = vod & id = User ID = USER & Password = PASSWORD
+
+Call Series Info api.php? Op = series & id = user ID = USER & password = PASSWORD
+
+Channel Summarized EPG Layer api.php? Op = epg_simples & id = User ID = USER & Password = PASSWORD
+
+Full EPG Layer Per Channel api.php? Op = epg & id = User ID = USER & Password = PASSWORD
+
+All EPG Layer Full api.php? Op = epgfull & username = USER & password = PASSWORD
+
+Make the calls through your browser by the URL you use there Example: www.mydomain.com/api.php?op=epgfull&user=USUARY&password=SHAKE
+
+Summer 1.0 Required to Treat and Adapt Arrys and Values
