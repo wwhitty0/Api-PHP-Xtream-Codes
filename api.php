@@ -14,66 +14,66 @@ curl_close($ch);
 return $retorno;
 }
 
-/* UTILIZANDO A API XTREAM DE FORMA SIMPLES
- * Os metodos são acessados via GET ou POST apartir do envio de alguns paramêtros
+/ * USING THE XTREAM API SIMPLY
+ * The methods are accessed via GET or POST by sending some parameters.
  *
- * Login e Senha = Obrigatorio em todas as requisições
+ * Login and Password = Required on all requests
  *
- * Chamada Login: 
- * api.php?op=login&usuario=USUARIO&senha=SENHA
+ * Call Login:
+ * api.php? op = login & username = USER & password = PASSWORD
  *
- * Chamada Categorias de Canais:
- * api.php?op=categoria_canais&usuario=USUARIO&senha=SENHA
+ * Call Channel Categories:
+ * api.php? op = channel_category & user = USER & password = PASSWORD
  *
- * Chamada Todos os Canais:
- * api.php?op=canais&usuario=USUARIO&senha=SENHA
+ * Call All Channels:
+ * api.php? op = channels & user = USER & password = PASSWORD
  *
- * Chamada Canais por Categoria:
- * api.php?op=canais&categoria=ID&usuario=USUARIO&senha=SENHA
+ * Call Channels by Category:
+ * api.php? op = channels & category = user ID = USER & password = PASSWORD
  *
- * Chamada Categorias de Vods (Filmes):
- * api.php?op=categoria_vods&usuario=USUARIO&senha=SENHA
+ * Call Categories of Vods (Movies):
+ * api.php? op = category_vods & username = USER & password = PASSWORD
  *
- * Camada Todos os Vods (Filmes):
- * api.php?op=vods&categoria=ID&usuario=USUARIO&senha=SENHA
+ * All Vods Layer (Movies):
+ * api.php? op = vods & category = user ID = USER & password = PASSWORD
  *
- * Chamada Vods por Categoria:
- * api.php?op=vods&categoria=ID&usuario=USUARIO&senha=SENHA
+ * Call Vods by Category:
+ * api.php? op = vods & category = user ID = USER & password = PASSWORD
  *
- * Chamada Categorias Séries:
- * api.php?op=categoria_series&usuario=USUARIO&senha=SENHA
+ * Call Categories Series:
+ * api.php? op = category_series & user = USER & password = PASSWORD
  *
- * Chamada Todas as Séries:
- * api.php?op=series&usuario=USUARIO&senha=SENHA
+ * Call All Series:
+ * api.php? op = series & username = USER & password = PASSWORD
  *
- * Chamada Séries por Categoria:
- * api.php?op=series&categoria=ID&usuario=USUARIO&senha=SENHA
+ * Call Series by Category:
+ * api.php? op = series & category = user ID = USER & password = PASSWORD
  *
- * Chamada Informações do Vod (Filme):
- * api.php?op=vod&id=ID&usuario=USUARIO&senha=SENHA
+ * Call Vod Info (Movie):
+ * api.php? op = vod & id = user ID = USER & password = PASSWORD
  *
- * Chamada Informações da Série
- * api.php?op=serie&id=ID&usuario=USUARIO&senha=SENHA
+ * Call Series Info
+ * api.php? op = series & id = user ID = USER & password = PASSWORD
  *
- * Camada EPG Resumido Por Canal
- * api.php?op=epg_simples&id=ID&usuario=USUARIO&senha=SENHA
+ * EPG Channel Summary Layer
+ * api.php? op = epg_simples & id = user ID = USER & password = PASSWORD
  *
- * Camada EPG Completo Por Canal
- * api.php?op=epg&id=ID&usuario=USUARIO&senha=SENHA
+ * Full EPG Layer Per Channel
+ * api.php? op = epg & id = User ID = USER & Password = PASSWORD
  *
- * Camada Todo EPG Full
- * api.php?op=epgfull&usuario=USUARIO&senha=SENHA
+ * Whole EPG Full Layer
+ * api.php? op = epgfull & username = USER & password = PASSWORD
  *
- * Chamada do Parse Converter a Lista M3U em JSON
- * api.php?op=lista&usuario=USUARIO&senha=SENHA
+ * Parse Call Convert M3U List to JSON
+ * api.php? op = list & user = USER & password = PASSWORD
  *
- * Faça as chamads através do seu navegador pela URL que você ai utilizar 
- * Exemplo: www.meudominio.com/api.php?op=epgfull&usuario=USUARIO&senha=SENHA
+ * Make calls through your browser by the URL you use there
+ * Example: www.mydomain.com/api.php?op=epgfull&user=USUARY&Password=SHAKE
  *
- * Verão 1.0 
- * Necessário Tratar e Adaptar Arrys e Valores
- * 
-*/
+ * Summer 1.0
+ * Need to Treat and Adapt Arrys and Values
+ *
+* /
 
 
 if($_REQUEST['op'] == 'login') {
